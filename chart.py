@@ -69,7 +69,8 @@ plt.grid(True, alpha=0.3, linestyle='--', linewidth=0.7)
 plt.tight_layout()
 
 # Save the figure as PNG with exactly 512x512 pixels
-plt.savefig('chart.png', dpi=64, bbox_inches='tight')
+# Remove bbox_inches='tight' to maintain exact dimensions
+plt.savefig('chart.png', dpi=64)
 
 print("Chart successfully generated and saved as 'chart.png'")
 print(f"Image dimensions: 512x512 pixels")
